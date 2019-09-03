@@ -18,6 +18,7 @@ public class messageTransmitter extends Thread{
     
     String message, hostname;
     int port;
+    writableGUI gui;
     
     public messageTransmitter()
     {

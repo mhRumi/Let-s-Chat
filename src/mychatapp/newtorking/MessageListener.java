@@ -58,7 +58,7 @@ public class MessageListener extends Thread{
                 String line = br.readLine();
                 if(line != null)
                 {
-                    gui.write(line);
+                    gui.write("Friend: "+line);
                 }
             }
         } catch (IOException ex) {

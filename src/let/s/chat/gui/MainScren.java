@@ -147,6 +147,7 @@ public class MainScren extends javax.swing.JFrame implements writableGUI {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         messageTransmitter transmitter = new messageTransmitter(message.getText(), ipTextField.getText(),Integer.parseInt(targetPort.getText()));
         transmitter.start();
+        write("Me: "+message.getText());
         message.setText("");
         
     }//GEN-LAST:event_jButton3ActionPerformed
